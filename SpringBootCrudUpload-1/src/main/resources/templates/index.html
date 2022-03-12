@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Fileshare chatserver</title>
+</head>
+<body>
+<div align="center">
+    <h1>FileShare List</h1>
+    <a href="new">Create New FileUpload</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Photo</th>
+               <th>Video</th>
+              <th>Document</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="fileuploadbean : ${listFileUploads}">
+            	<td th:text="${fileuploadbean.id}">ID</td>
+                <td th:text="${fileuploadbean.name}">Name</td>
+                <td th:file="${fileuploadbean.photo}">photo</td>
+                <td th:file="${fileuploadbean.video}">Video</td>
+                <td th:file="${fileuploadbean.document}">Document</td>
+               
+                <td>
+                	<a th:href="@{'/edit/' + ${fileuploadbean.id}}">Edit</a>
+                	&nbsp;&nbsp;&nbsp;
+                	</td>
+                	<td>
+                	<a th:href="@{'/delete/' + ${fileuploadbean.id}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+</body>
+</html>
