@@ -26,7 +26,7 @@ import com.example.service.FileUploadService;
 @Controller
 public class FileUploadController {
 	@Autowired
-	private FileUploadService service; 
+	private FileUploadService service;
 	
 	@RequestMapping("/")
 	public String viewHomePage(Model model) {

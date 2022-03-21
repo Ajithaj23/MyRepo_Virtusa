@@ -16,7 +16,7 @@ function sendMessage(){
 function connect()
 {
 
-        let socket=new SockJS("/server1")
+        let socket=new SockJS("/servlet1")
 
         stompClient=Stomp.over(socket)
 

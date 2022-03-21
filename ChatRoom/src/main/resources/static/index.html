@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Chat Room </title>
-
+<link type="text/css" th:href="@{/css/style.css}" rel="stylesheet" />
     <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/style.css">
 
@@ -17,7 +17,6 @@
     <script src="/script.js"></script>
 </head>
 <body>
-
 <body class="bg-dark " >
 
 <div id="name-from" class="bg-primary d-flex align-items-center">
@@ -69,7 +68,7 @@
             <div class="col-md-6 offset-md-3">
 
 
-                <div class="card mt-3">
+                <div class="card mt-6">
                     <div class="card-header">
 
                         <h3 id="name-title"></h3>
@@ -81,6 +80,15 @@
 
                             <input type="text"
                                    placeholder="Enter your message "
+                                   id="message-value"
+                                   autofocus
+                                   class="form-control">
+
+                            <div class="input-group-append">
+                            
+                            <div class="input-group">
+                            <input type="file" id="photo" href="new"
+                                   
                                    id="message-value"
                                    autofocus
                                    class="form-control">
@@ -118,8 +126,6 @@
 
 
 </div>
-
-
 
 </body>
 </html>
