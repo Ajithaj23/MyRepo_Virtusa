@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.smart.config;
 
 
 import org.springframework.context.annotation.Configuration;

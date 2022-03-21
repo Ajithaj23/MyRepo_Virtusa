@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html  >
 <head>
+
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-<title>Spring Boot WebSocket Chat Application | CalliCoder</title>
+<title>Spring Boot  ChatRoom Application </title>
 <link rel="stylesheet" href="/css/main.css" />
 
 </head>
+<section>
 <body background="18.jpg"
 	style="background-position: center; background-repeat: no-repeat; background-size: cover;">
 	<noscript>
@@ -32,7 +34,7 @@
 	<div id="chat-page" class="hidden">
 		<div class="chat-container">
 			<div class="chat-header">
-				<h2>JavaTechie Global Chat Box</h2>
+				<h2>Global Chat Room</h2>
 			</div>
 			<div class="connecting">Connecting...</div>
 			<ul id="messageArea">
@@ -59,5 +61,13 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 	<script src="/js/main.js"></script>
 
+
+ <script>
+        $(document).ready(() => {
+          $(".item").removeClass("active");
+          $("#-chatroomindex-link").addClass("active");
+        });
+      </script>
+</section>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>this is home page</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="card">
+				<div class="card-body my-5">
+					<div class="container text-center">
+						<h1>Welcome to Admin Page</h1>
+
+					
+
+					
+						
+						
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+        $(document).ready(() => {
+          $(".item").removeClass("active");
+          $("#home-link").addClass("active");
+        });
+      </script>
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	</section>
+</body>
+</html>
